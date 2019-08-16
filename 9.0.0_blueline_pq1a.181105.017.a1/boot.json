@@ -1,0 +1,13 @@
+{
+  "copy": {
+  },
+  "hash": {
+    "boot.img": "33c44ed97d4f7905964d426f1f557f07",
+    "boot.img.clear": "17799a2d969d9202b0977aea0ad4351f",
+    "boot.img.google": "17799a2d969d9202b0977aea0ad4351f",
+    "boot.img.signed": "51ff8d1fbe56f2c53545d2a956b1d923",
+    "boot.img.signed2": "51ff8d1fbe56f2c53545d2a956b1d923",
+    "build/unzip_boot/kernel": "6a4411715f0fecbbdc401e40d7e2ed48",
+    "build/unzip_boot/ramdisk.img.gz": "e9b9b930e0a46de4ce90ab79a5409033"
+  }
+}
