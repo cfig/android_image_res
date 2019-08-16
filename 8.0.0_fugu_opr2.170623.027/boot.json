@@ -1,0 +1,12 @@
+{
+  "copy": {
+    "boot.img": "boot.img"
+  },
+  "hash": {
+    "boot.img": "240c3e21b21fcc497d5d0640067ac5ee",
+    "boot.img.signed": "4adaa66a5862ef7164a9dc40f2243b62",
+    "build/unzip_boot/kernel": "e4851456681ba3eb2d2e5cdcab33c473",
+    "build/unzip_boot/ramdisk.img.gz": "43b4eebd239f3ca9edaaa701bc4c4572",
+    "build/unzip_boot/second": "8bbafb00f7064db705dd5f2acba6ed19"
+  }
+}
