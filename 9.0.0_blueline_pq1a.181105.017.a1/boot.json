@@ -1,5 +1,6 @@
 {
   "copy": {
+    "boot.img": "boot.img"
   },
   "hash": {
     "boot.img": "33c44ed97d4f7905964d426f1f557f07",
