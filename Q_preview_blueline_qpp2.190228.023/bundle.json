@@ -1,0 +1,10 @@
+{
+  "copy": {
+    "boot.img": "boot.img",
+    "vbmeta.img": "vbmeta.img"
+  },
+  "hash": {
+    "boot.img.signed": "306f3fe2f10e651bf5bc0749d129709c",
+    "vbmeta.img.signed": "a15847aff3007c50c58771c953368a00"
+  }
+}
