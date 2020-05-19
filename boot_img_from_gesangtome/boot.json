@@ -1,0 +1,13 @@
+{
+  "copy": {
+    "boot.img": "boot.img"
+  },
+  "hash": {
+    "boot.img": "83185e72fee9dd84e4373bf053a5f8be",
+    "boot.img.clear": "32722c678e9ab18db22173dcf05aad94",
+    "boot.img.google": "32722c678e9ab18db22173dcf05aad94",
+    "boot.img.signed": "dc505dac3363f959d6327c44da954868",
+    "boot.img.signed2": "dc505dac3363f959d6327c44da954868",
+    "build/unzip_boot/kernel": "c08bc8f3189c441be967762993e08b8e"
+  }
+}
