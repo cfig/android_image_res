@@ -1,0 +1,11 @@
+{
+  "copy": {
+    "vendor_boot.img": "vendor_boot.img",
+    "vbmeta.img": "vbmeta.img"
+  },
+  "hash": {
+    "vendor_boot.img": "1aac65f9831a327af5bf1fa00755d150",
+    "vbmeta.img": "3c3bd0ed62968c04af997b089188d9f1",
+    "build/unzip_boot/ramdisk.img": "c9690450e3850aa27adc566dee5a37dc"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "copy": {
+    "boot.img": "boot.img",
+    "vbmeta.img": "vbmeta.img"
+  },
+  "hash": {
+    "boot.img": "fa8877c60a7011b75da29ca66884009d",
+    "vbmeta.img": "3c3bd0ed62968c04af997b089188d9f1",
+    "build/unzip_boot/ramdisk.img": "ce194a4a925a6e6ca6f49574d8fb7d7c",
+    "build/unzip_boot/kernel": "d7260032bfa469b2ac538460c02bf074"
+  }
+}
