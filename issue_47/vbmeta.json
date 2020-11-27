@@ -1,0 +1,9 @@
+{
+  "copy": {
+    "vbmeta.img": "vbmeta.img"
+  },
+  "hash": {
+    "vbmeta.img": "49261461d088dd01f5109b9c304e14a9",
+    "vbmeta.img.signed": "8ce7e709d3486f161af41fa6f3dca90c"
+  }
+}
