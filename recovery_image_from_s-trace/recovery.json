@@ -4,9 +4,9 @@
   },
   "hash": {
     "recovery.img": "47dba6d7e81aab728cfb063e2b36aa24",
-    "recovery.img.clear": "404077a6769b2fa825ab5381cbede59e",
-    "recovery.img.signed": "be452a50135e541e823340d0de07c9c9",
+    "recovery.img.clear": "0f31b7dfefbacd27ef38917c7199c747",
+    "recovery.img.signed": "72fa6b4b019ae972f6f4d69154ea2a16",
     "build/unzip_boot/kernel": "d33febeed435964e6e4e9ff465839ee3",
-    "build/unzip_boot/ramdisk.img.gz": "90e1740c02696d23e77e07c8ab4481d2"
+    "build/unzip_boot/ramdisk.img.gz": "a60db457c584237e48957e80e706d5b2"
   }
 }
