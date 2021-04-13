@@ -1,0 +1,9 @@
+{
+  "copy": {
+    "boot.img": "boot.img"
+  },
+  "hash": {
+    "boot.img": "f6c6c83c2e425f679b128e46250c21d0",
+    "boot.img.signed": "f6c6c83c2e425f679b128e46250c21d0"
+  }
+}
