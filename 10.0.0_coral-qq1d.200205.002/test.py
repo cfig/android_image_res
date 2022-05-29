@@ -18,6 +18,7 @@ def boot_only():
     subprocess.check_call(gradleWrapper + " pack", shell = True)
     unittest.TestCase().assertEqual("7d46447d06bf98e91900e303525fae70", hashFile("vbmeta.img"))
     unittest.TestCase().assertEqual("865c673b258030d97ed2ff1c3d32fa5e", hashFile("vbmeta.img.signed"))
+    subprocess.check_call(gradleWrapper + " clear", shell = True)
     cleanUp()
 
 def vbmeta_only():
@@ -28,6 +29,7 @@ def vbmeta_only():
     unittest.TestCase().assertEqual("a619ad39e982c83b76a407f08e82a5e1", hashFile("boot.img.google"))
     unittest.TestCase().assertEqual("078cef4c9debb2a1abfcc596e8291477", hashFile("boot.img.signed"))
     unittest.TestCase().assertEqual("078cef4c9debb2a1abfcc596e8291477", hashFile("boot.img.signed2"))
+    subprocess.check_call(gradleWrapper + " clear", shell = True)
 
 def boot_vbmeta():
     cleanUp()
@@ -37,6 +39,7 @@ def boot_vbmeta():
     subprocess.check_call(gradleWrapper + " pack", shell = True)
     unittest.TestCase().assertEqual("078cef4c9debb2a1abfcc596e8291477", hashFile("boot.img.signed"))
     unittest.TestCase().assertEqual("5d07532769fec2003c1e4475a094e30c", hashFile("vbmeta.img.signed"))
+    subprocess.check_call(gradleWrapper + " clear", shell = True)
     cleanUp()
 
 def boot_change_algorithm():
@@ -86,6 +89,7 @@ def boot_change_algorithm():
     subprocess.check_call(gradleWrapper + " pack", shell = True)
     unittest.TestCase().assertEqual("e17f440c19b52a072328f7da09a2b5c4", hashFile("boot.img.signed"))
     unittest.TestCase().assertEqual("e17f440c19b52a072328f7da09a2b5c4", hashFile("boot.img.signed2"))
+    subprocess.check_call(gradleWrapper + " clear", shell = True)
 
 def boot_change_footer_hash_algorithm():
     cleanUp()
@@ -98,6 +102,7 @@ def boot_change_footer_hash_algorithm():
     subprocess.check_call(gradleWrapper + " pack", shell = True)
     unittest.TestCase().assertEqual("13fe1ffe8f13dc94eda387d1d65099e9", hashFile("boot.img.signed"))
     unittest.TestCase().assertEqual("13fe1ffe8f13dc94eda387d1d65099e9", hashFile("boot.img.signed2"))
+    subprocess.check_call(gradleWrapper + " clear", shell = True)
 
 if __name__ == "__main__":
     boot_only()

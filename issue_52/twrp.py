@@ -15,6 +15,7 @@ def boot_only():
         gradleWrapper = "./gradlew"
         shellRun = False
     subprocess.check_call(gradleWrapper + " unpack", shell = True)
+    subprocess.check_call(gradleWrapper + " clear", shell = True)
     it.cleanUp()
 
 if __name__ == "__main__":
