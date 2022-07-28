@@ -11,6 +11,10 @@ else:
     gradleWrapper = "./gradlew"
     shellRun = False
 
+def removeDts():
+    # remove dts
+    os.remove("build/unzip_boot/dtb.src")
+
 def boot_only():
     cleanUp()
     shutil.copyfile("src/integrationTest/resources/10.0.0_coral-qq1d.200205.002/vbmeta.img", "vbmeta.img")
@@ -25,6 +29,7 @@ def vbmeta_only():
     cleanUp()
     decompressXZ("src/integrationTest/resources/10.0.0_coral-qq1d.200205.002/boot.img.xz", "boot.img")
     subprocess.check_call(gradleWrapper + " unpack", shell = True)
+    removeDts()
     subprocess.check_call(gradleWrapper + " pack", shell = True)
     unittest.TestCase().assertEqual("a619ad39e982c83b76a407f08e82a5e1", hashFile("boot.img.google"))
     unittest.TestCase().assertEqual("078cef4c9debb2a1abfcc596e8291477", hashFile("boot.img.signed"))
@@ -36,6 +41,7 @@ def boot_vbmeta():
     shutil.copyfile("src/integrationTest/resources/10.0.0_coral-qq1d.200205.002/vbmeta.img", "vbmeta.img")
     decompressXZ("src/integrationTest/resources/10.0.0_coral-qq1d.200205.002/boot.img.xz", "boot.img")
     subprocess.check_call(gradleWrapper + " unpack", shell = True)
+    removeDts()
     subprocess.check_call(gradleWrapper + " pack", shell = True)
     unittest.TestCase().assertEqual("078cef4c9debb2a1abfcc596e8291477", hashFile("boot.img.signed"))
     unittest.TestCase().assertEqual("5d07532769fec2003c1e4475a094e30c", hashFile("vbmeta.img.signed"))
@@ -46,6 +52,7 @@ def boot_change_algorithm():
     cleanUp()
     decompressXZ("src/integrationTest/resources/10.0.0_coral-qq1d.200205.002/boot.img.xz", "boot.img")
     subprocess.check_call(gradleWrapper + " unpack", shell = True)
+    removeDts()
     # algorithm_type = 1
     subprocess.check_call(["vim", "-u", "NONE", "-N",
         "build/unzip_boot/boot.avb.json",
@@ -95,6 +102,7 @@ def boot_change_footer_hash_algorithm():
     cleanUp()
     decompressXZ("src/integrationTest/resources/10.0.0_coral-qq1d.200205.002/boot.img.xz", "boot.img")
     subprocess.check_call(gradleWrapper + " unpack", shell = True)
+    removeDts()
     subprocess.check_call(["vim", "-u", "NONE", "-N",
         "build/unzip_boot/boot.avb.json",
         "-c", '%s/hash_algorithm.*"/hash_algorithm" : "sha512"/g',

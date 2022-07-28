@@ -1,0 +1,2 @@
+## note
+dtb in boot.img will be parsed and re-compiled during the flow
