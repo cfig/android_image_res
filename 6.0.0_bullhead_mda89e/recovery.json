@@ -5,7 +5,6 @@
   "hash": {
     "recovery.img": "65544307cd0e49dcf110d608fdca68bf",
     "recovery.img.clear": "e1475ffaaf3802da818c139a357d199b",
-    "recovery.img.google": "e1475ffaaf3802da818c139a357d199b",
     "recovery.img.signed": "d5df6c4bcad9dcc06f8f542a4b757033",
     "build/unzip_boot/kernel": "2376471e515b6629693e7b89999fc0d0",
     "build/unzip_boot/ramdisk.img.gz": "a6ae4770f0f9ffc19bec144f15e245bf"
