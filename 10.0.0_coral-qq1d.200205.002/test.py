@@ -13,7 +13,7 @@ else:
 
 def removeDts():
     # remove dts
-    os.remove("build/unzip_boot/dtb.dts")
+    os.remove("build/unzip_boot/dtb.0.dts")
 
 def boot_only():
     cleanUp()
